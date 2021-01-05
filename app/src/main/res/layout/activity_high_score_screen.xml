@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HighScoreScreen">
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+    </com.google.android.gms.ads.AdView>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+    </com.google.android.gms.ads.AdView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="@string/youtube_string"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/youtube_description_text"
+        android:id="@+id/youtube_text"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="@string/youtube_description_string"
+        android:textColor="@color/colorAccent"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/twitch_text"
+        android:id="@+id/youtube_description_text"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="45sp"
+        android:text="@string/high_score"
+        android:textColor="@color/green"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/high_score"
+        android:id="@+id/high_score_text"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="45sp"
+        android:textColor="@color/red"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/last_score_text"
+        android:id="@+id/high_score"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="45sp"
+        android:text="@string/last_score"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/last_score"
+        android:id="@+id/last_score_text"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="45sp"
+        android:textColor="@color/blue"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/spacer"
+        android:id="@+id/last_score"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="45sp"
+        android:textColor="@color/blue"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/shareButton"
+        android:id="@+id/spacer"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+        android:text="@string/continue_button"
+        android:textColor="#000"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/adView4"
+        android:id="@+id/continueButton"/>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:textSize="10sp"
+        android:text="@string/share_button"
+        android:textColor="@color/green"
+        android:background="@color/blue"
+        android:layout_above="@id/youtube_text"
+        android:layout_centerHorizontal="true"
+
+        android:id="@+id/shareButton" />
+    <!--        android:layout_toLeftOf="@id/spacer2"-->
+
+<!--    <Button-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:textSize="10sp"-->
+<!--        android:text="@string/leaderboard_button"-->
+<!--        android:textColor="@color/red"-->
+<!--        android:background="@color/black"-->
+<!--        android:layout_above="@id/youtube_text"-->
+<!--        android:layout_toRightOf="@id/spacer2"-->
+<!--        android:id="@+id/leaderboard_Button"/>-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="@string/twitch_string"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/twitch_description_text"
+        android:id="@+id/twitch_text"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="@string/twitch_description_string"
+        android:textColor="@color/colorAccent"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/continueButton"
+        android:id="@+id/twitch_description_text"/>
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="15sp"-->
+<!--        android:text=" "-->
+<!--        android:textColor="@color/colorAccent"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_above="@id/youtube_text"-->
+<!--        android:id="@+id/spacer2"/>-->
+
+</RelativeLayout>

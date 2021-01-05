@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+    </com.google.android.gms.ads.AdView>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+    </com.google.android.gms.ads.AdView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="72sp"
+        android:text="@string/app_name_l"
+        android:textColor="@color/green"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/titlespace2"
+        android:id="@+id/titlel1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="72sp"
+        android:text="@string/app_name_l"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@id/titlespace3"
+        android:layout_centerVertical="true"
+        android:id="@+id/titlel2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="72sp"
+        android:text="@string/app_name_a"
+        android:textColor="@color/blue"
+        android:layout_toLeftOf="@id/titlespace2"
+        android:layout_centerVertical="true"
+        android:id="@+id/titlea"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="72sp"
+        android:text="@string/app_name_z"
+        android:textColor="@color/red"
+        android:layout_toRightOf="@id/titlespace4"
+        android:layout_centerVertical="true"
+        android:id="@+id/titlez"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="72sp"
+        android:text="@string/app_name_w"
+        android:textColor="@color/red"
+        android:layout_toLeftOf="@id/titlespace1"
+        android:layout_centerVertical="true"
+        android:id="@+id/titlew"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="72sp"
+        android:text="@string/app_name_space"
+        android:textColor="@color/red"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/titlespace2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="72sp"
+        android:text="@string/app_name_space"
+        android:textColor="@color/red"
+        android:layout_toLeftOf="@id/titlea"
+        android:layout_centerVertical="true"
+        android:id="@+id/titlespace1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="72sp"
+        android:text="@string/app_name_space"
+        android:textColor="@color/red"
+        android:layout_toRightOf="@id/titlel1"
+        android:layout_centerVertical="true"
+        android:id="@+id/titlespace3"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="72sp"
+        android:text="@string/app_name_space"
+        android:textColor="@color/red"
+        android:layout_toRightOf="@id/titlel2"
+        android:layout_centerVertical="true"
+        android:id="@+id/titlespace4"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+        android:text="PLAY"
+        android:textColor="#000"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/adView2"
+        android:id="@+id/playButton"/>
+
+
+</RelativeLayout>
